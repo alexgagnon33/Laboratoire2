@@ -1,7 +1,3 @@
-#Étape 1:
-#lire doc os
-#lire les doc
-
 def etape_1():
 
     with open('data1.txt') as A:
@@ -16,33 +12,34 @@ def etape_1():
         data_C = C.read
     print(data_C)
 
-
-#Étape 2:
-#afficher les étapes 3 à 6
+    return data_A, data_B, data_C
 
 def etape_2():
+
     print('Voici les choix disponible: ')
     print("[1] Afficher les statistiques")
     print("[2] Afficher l'équipe la plus homogène")
     print("[3] Ajouter une faute à une équipe")
     print("[4] Sauvegarder les statistiques")
     print("[5] Sortir")
-    choix_utilisateur = int(input('Quel est votre option: '))
+
+    choix_utilisateur = int(input('Ecriver votre option: '))
+
     if choix_utilisateur ==1:
-        pass
+        print
+
     elif choix_utilisateur ==2:
-        pass
+        print()
+
     elif choix_utilisateur ==3:
         pass
+
     elif choix_utilisateur ==4:
-        pass
+        
+
     else:
         choix_utilisateur ==5
-        pass
-
-#Étape 3:
-#trouver le max temps
-#moyenne temps chaque équipe mais 
+        print("Vous quitter le menu: ")
 
 def etape_3():
     Meilleur_coureur_A = min(data_A)
@@ -57,25 +54,23 @@ def etape_3():
         Meilleur_coureur_C < Meilleur_coureur_A and Meilleur_coureur_A < Meilleur_coureur_B
         print('Coureur le plus rapide: Equipe C', Meilleur_coureur_C)
 
-def moyenne(data_A):
-    moyenne_A = sum(data_A) / len(data_A)
+moyenne_A = sum(data_A) / len(data_A)
 print("La moyenne de cette equipe est: ", round(moyenne_A, 2))
 
-def moyenne(data_B):
-    moyenne_A = sum(data_A) / len(data_A)
-print("La moyenne de cette equipe est: ", round(moyenne_A, 2))
 
-def moyenne(data_C):
-    moyenne_A = sum(data_A) / len(data_A)
+moyenne_B = sum(data_B) / len(data_B)
+print("La moyenne de cette equipe est: ", round(moyenne_B, 2))
 
-    if moyenne_A < moyenne_B and moyenne_A < moyenne_C:
-        print("L'equipe A est la plus rapide avec un temps moyen de ", moyenne_A)
-    elif moyenne_B < moyenne_A and moyenne_B < moyenne_C:
-        print("L'equipe B est la plus rapide avec un temps moyen de ", moyenne_B)
+moyenne_C = sum(data_C) / len(data_C)
+print("La moyenne de cette equipe est: ", round(moyenne_C, 2))
 
-    else:
-        moyenne_C < moyenne_A and moyenne_C < moyenne_B
-        print("L'equipe C est la plus rapide avec un temps moyen de ", moyenne_C)
+if moyenne_A < moyenne_B and moyenne_A < moyenne_C:
+    print("L'equipe A est la plus rapide avec un temps moyen de ", moyenne_A)
+elif moyenne_B < moyenne_A and moyenne_B < moyenne_C:
+    print("L'equipe B est la plus rapide avec un temps moyen de ", moyenne_B)
+else:
+    moyenne_C < moyenne_A and moyenne_C < moyenne_B
+    print("L'equipe C est la plus rapide avec un temps moyen de ", moyenne_C)
 
 import math
 
@@ -102,20 +97,8 @@ def trier(donnees: list[int]):
         donnees_triees.append(min)
     return donnees_triees
 
-données = [A, B, C]
+données = [moyenne_A, moyenne_B, moyenne_C]
 print(trier(données))
-
-if A
-
-
-
-
-https://www.teachyourselfpython.com/challenges.php?a=04_Mini_Projects_NEA_Samples_Tutorials&t=02_Netflix_type_Program_NEA_OCR_Task2&s=01_Main_Menu_Start_Screen
-
-
-#Étape 4:
-#trouver équart type de chaque équipe 
-#trouver l'équart type le plus petit min
 
 def etape_4():
 
@@ -130,11 +113,6 @@ elif Equipeb < Equipea and Equipeb < Equipec:
 else:
     Equipec < Equipea and Equipec < Equipeb:
     print("Equipe C est l'equipe avec le plus petit écart-type: ", Equipec)
-
-#Étape 5:
-#sous-menu
-#création d'un nouveau doc os
-#ajouter faute dans nouveau doc
 
 def etape_5():
 #créer nouveau txt
@@ -172,4 +150,5 @@ f = open("Montréal.txt")
 #lire info étape 3
 #créer nouveau doc os
 #mettre info étape 3
+
 
