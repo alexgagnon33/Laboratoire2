@@ -35,13 +35,13 @@ def etape_2():
         pass
 
     elif choix_utilisateur ==4:
-        
-
+        pass
     else:
         choix_utilisateur ==5
         print("Vous quitter le menu: ")
-
+    
 def etape_3():
+    #doit apprendre comment utiliser des infosd'une autre def
     Meilleur_coureur_A = min(data_A)
     Meilleur_coureur_B = min(data_B)
     Meilleur_coureur_C = min(data_C)
@@ -101,48 +101,46 @@ données = [moyenne_A, moyenne_B, moyenne_C]
 print(trier(données))
 
 def etape_4():
+   #doit apprendre comment utiliser des infosd'une autre def
+   #doit voir la vrai règle pour écart type
+    Equipea = sqrt(Sum((data - moyenne)**2)/nombre de données - 1)
+    Equipeb = sqrt(Sum((data - moyenne)**2)/nombre de données - 1)
+    Equipec = sqrt(Sum((data - moyenne)**2)/nombre de données - 1)
 
-Equipea = sqrt(Sum((data - moyenne)**2)/nombre de données - 1)
-Equipeb = sqrt(Sum((data - moyenne)**2)/nombre de données - 1)
-Equipec = sqrt(Sum((data - moyenne)**2)/nombre de données - 1)
-
-if Equipea < Equipeb and Equipea < Equipec:
-    print("Equipe A est l'equipe avec le plus petit écart-type: ", Equipea)
-elif Equipeb < Equipea and Equipeb < Equipec:
+    if Equipea < Equipeb and Equipea < Equipec:
+        print("Equipe A est l'equipe avec le plus petit écart-type: ", Equipea)
+    elif Equipeb < Equipea and Equipeb < Equipec:
         print("Equipe B est l'equipe avec le plus petit écart-type: ", Equipeb)
-else:
-    Equipec < Equipea and Equipec < Equipeb:
-    print("Equipe C est l'equipe avec le plus petit écart-type: ", Equipec)
+    else:
+        Equipec < Equipea and Equipec < Equipeb:
+        print("Equipe C est l'equipe avec le plus petit écart-type: ", Equipec)
 
 def etape_5():
-#créer nouveau txt
-f = open(Desktop, mode)
+    #doit apprendre comment ouvrir un fichier comment le prof veut
+f = open('Desktop', 'w')
 with open('Montréal.txt', 'w') as f:
     f.write(1)
 f = open("Montréal.txt")
 
-    print('Voici les choix disponible: ')
-    print("[1] Afficher les statistiques")
-    print("[2] Afficher l'équipe la plus homogène")
-    print("[3] Ajouter une faute à une équipe")
-    print("[4] Sauvegarder les statistiques")
-    print("[5] Sortir")
+print('Voici les choix disponible: ')
+print("[1] Afficher les statistiques")
+print("[2] Afficher l'équipe la plus homogène")
+print("[3] Ajouter une faute à une équipe")
+print("[4] Sauvegarder les statistiques")
+print("[5] Sortir")
 
-    choix_user = int(input('Choisir un phrase a recevoir (ex: 1 , 2  ou 3 ): '))
-
-    if choix_user ==1:
+choix_user = int(input('Choisir un phrase a recevoir (ex: 1 , 2  ou 3 ): '))
+   #doit apprendre comment utiliser des infosd'une autre def
+if choix_user ==1:
         input("Quel joeur a la faute en question: ")
         print(joeur, faute) #fichier text
-
-    if choix_user ==2:
+if choix_user ==2:
         input("Quel joeur a la faute en question: ")
         print(joeur, faute) #fichier text
-
-    if choix_user ==3:
+if choix_user ==3:
         input("Quel joeur a la faute en question: ")
         print(joeur, faute) #fichier text
-
-    if choix_user ==4:
+if choix_user ==4:
         input("Quel joeur a la faute en question: ")
         print(joeur, faute) #fichier text
 
@@ -151,4 +149,5 @@ f = open("Montréal.txt")
 #créer nouveau doc os
 #mettre info étape 3
 
-
+   #doit apprendre comment utiliser des infosd'une autre def
+   #apprendre mettre linfo dans un nouveau doc
