@@ -1,3 +1,17 @@
+import os
+
+absolute_path = ("C:\Users\e2296648\Desktop\labo2\data1")
+relative_path = "src/lib"
+full_path = os.path.join(absolute_path, relative_path)
+
+absolute_path = ("C:\Users\e2296648\Desktop\labo2\data2")
+relative_path = "src/lib"
+full_path = os.path.join(absolute_path, relative_path)
+
+absolute_path = ("C:\Users\e2296648\Desktop\labo2\data3")
+relative_path = "src/lib"
+full_path = os.path.join(absolute_path, relative_path)
+
 def etape_1():
 
     with open('data1.txt') as A:
@@ -149,5 +163,3 @@ if choix_user ==4:
 #créer nouveau doc os
 #mettre info étape 3
 
-   #doit apprendre comment utiliser des infosd'une autre def
-   #apprendre mettre linfo dans un nouveau doc
