@@ -37,7 +37,7 @@ while True:
 
         for team, times in sorted(info_equipe.items(), key=lambda x: statistics.mean(x[1])):
             temps_win = statistics.mean(times)
-            print(f'{team} - Moyenne: {temps_win:.2f}s')
+            print(f'{team} - La Moyenne est de: {temps_win:.1f}s')
         
     elif choix_utilisateur == 2:
 
